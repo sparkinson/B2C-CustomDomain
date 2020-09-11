@@ -20,12 +20,10 @@ Remove this rule if you don't plan to use this function.
 - web.config              --> /site/wwwroot
 - applicationHost.xdt     --> /site
 
-4. CORS
-If you are using your own HTML pages with B2C, update the CORS settings on the Azure Storage account to allow GET,OPTIONS for https://myapp.azurewebsites.net
+4. CORS - If you are using your own HTML pages with B2C, update the CORS settings on the Azure Storage account to allow GET,OPTIONS for https://myapp.azurewebsites.net
 [https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-ui-customization#3-configure-cors](https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-ui-customization#3-configure-cors)
 
-5. Test
-test run a B2C Policy to see that it works, like
+5. Test run a B2C Policy to see that it works, like
 
   https://yourtenant.b2clogin.com/yourtenant.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_signup_signin&client_id=...
 
