@@ -28,7 +28,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequest req, ILogger log)
         json.token_endpoint = ((string)json.token_endpoint).Replace(host, originalHost);
         json.end_session_endpoint = ((string)json.end_session_endpoint).Replace(host, originalHost);
         json.jwks_uri = ((string)json.jwks_uri).Replace(host, originalHost); 
-        contents = JsonConvert.SerializeObject(json);
+        contents = JsonConvert.SerializeObject(json, Formatting.Indented);
     }
     var content = new StringContent(contents, System.Text.Encoding.UTF8, "application/json");
     content.Headers.Add("Access-Control-Allow-Origin", "*");
