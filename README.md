@@ -1,5 +1,4 @@
-# B2C-CustomDomain
-Custom Domains for Azure AD B2C using Azure AppServices via URL rewrite rules
+# Custom Domains for Azure AD B2C using Azure AppServices via URL rewrite rules
 
 A descriptive text about how to configure this can be found here [http://www.redbaronofazure.com/?p=7685](http://www.redbaronofazure.com/?p=7685) but if you just want to try it out, you can follow the steps below.
 
