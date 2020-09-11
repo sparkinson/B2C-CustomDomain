@@ -18,8 +18,8 @@ Remove this rule if you don't plan to use this function.
 3. Upload Web.config and applicationHost.xdt to AppService
 [https://docs.microsoft.com/en-us/azure/app-service/deploy-ftp](https://docs.microsoft.com/en-us/azure/app-service/deploy-ftp)
 
-web.config              --> /site/wwwroot
-applicationHost.xdt     --> /site
+- web.config              --> /site/wwwroot
+- applicationHost.xdt     --> /site
 
 4. CORS
 If you are using your own HTML pages with B2C, update the CORS settings on the Azure Storage account to allow GET,OPTIONS for https://myapp.azurewebsites.net
