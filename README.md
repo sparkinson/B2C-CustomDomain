@@ -9,6 +9,12 @@ Runtime stack = ASP.NET v4.7
 
 2. Edit web.config and replace "yourtenant.b2clogin.com" with your tenant name, like "***mytenantname***.b2clogin.com"
 
+The web.config contains a solution for rerouting requests to 
+https://sts.mydomain.com/yourtenant.onmicrosoft.com/B2C_1A_signup_signin/v2.0/.well-known/openid-configuration
+to an Azure Function so that it can rewrite the JSON contents before we return it to the client. Otherwise authorization_endpoint, etc, would point to the B2C tenant and not to sts.mydomain.com.
+
+Remove this rule if you don't plan to use this function.
+
 3. Upload Web.config and applicationHost.xdt to AppService
 [https://docs.microsoft.com/en-us/azure/app-service/deploy-ftp](https://docs.microsoft.com/en-us/azure/app-service/deploy-ftp)
 
